@@ -1,5 +1,5 @@
 # SFML-Practice
-Temporary title but plan to learn and create a game using SFML.
+Commands to build statically and dynamically are provided.
 
 # Running
 
