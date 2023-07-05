@@ -10,10 +10,6 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
 #include <SFML/Graphics.hpp>
-
-#include <cmath>
-#include <ctime>
-#include <cstdlib>
 #include <SFML/Main.hpp>
 
 /*
