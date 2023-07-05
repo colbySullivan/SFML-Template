@@ -34,13 +34,15 @@ private:
     sf::Font font;
 
     // Create text
-    sf::Text pauseMessage;
+    sf::Text defaultMessage;
 
     //Running events
     sf::Event event;
 
     void initVariables();
     void initWindow();
+    void initFonts();
+	void initMessages();
 public:
 	//Constructors / Destructors
 	Game();

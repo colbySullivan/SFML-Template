@@ -12,6 +12,19 @@ void Game::initWindow(){
     this->window->setVerticalSyncEnabled(true);
 }
 
+void Game::initFonts(){
+    if (!this->font.loadFromFile("resources/tuffy.ttf"))
+        return exit(0);
+}
+
+void Game::initMessages(){
+    this->defaultMessage.setFont(font);
+    this->defaultMessage.setCharacterSize(40);
+    this->defaultMessage.setPosition(170.f, 200.f);
+    this->defaultMessage.setFillColor(sf::Color::White);
+    this->defaultMessage.setString("Everything is set up correctly!\n\nPress esc to exit the window.");
+}
+
 const bool Game::running() const{
 	return this->window->isOpen();
 }
@@ -35,6 +48,9 @@ void Game::rungame(){
         // Clear the window
         this->window->clear(sf::Color(0, 0, 0));
 
+        //Display default message
+        this->window->draw(defaultMessage);
+
         // Display things on screen
         this->window->display();
     }
@@ -43,4 +59,6 @@ void Game::rungame(){
 Game::Game(){
 	this->initVariables();
     this->initWindow();
+    this->initFonts();
+    this->initMessages();
 }
