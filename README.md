@@ -1,4 +1,4 @@
-# SFML-Practice
+# SFML-Template
 Commands to build statically and dynamically are provided.
 
 # Running
