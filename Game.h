@@ -13,8 +13,8 @@
 #include <SFML/Main.hpp>
 
 /*
-	Class that acts as the game engine.
-	Wrapper class.
+ *	Class that acts as the game engine.
+ *	Wrapper class.
 */
 
 class Game{
